@@ -1,0 +1,20 @@
+package com;
+
+import java.util.Scanner;
+
+@lombok.extern.slf4j.Slf4j
+public class Main {
+    public static void main(String[] args) throws Exception {
+//        Scanner scanner = new Scanner(System.in);
+//        String path = scanner.nextLine();
+//        log.info("Path was received");
+//        IniReader ini = new IniReader(path);
+//        String url = ini.getUrl();
+//        String urlDB = ini.getUrlDB();
+//        String username = ini.getUsername();
+//        String password = ini.getPassword();
+//        DownloadFileFromUrl dffu = new DownloadFileFromUrl(log, url);
+//        SAX sax = new SAX();
+//        sax.SAX(log, dffu.getFileName(), urlDB, username, password);
+    }
+}

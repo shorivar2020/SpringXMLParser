@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ParserXML
+    username: postgres
+    password: 3400
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 60000
+      maximum-pool-size: 120
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        proc:
+          param_null_passing: true
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
