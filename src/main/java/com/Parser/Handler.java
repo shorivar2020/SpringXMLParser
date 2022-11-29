@@ -1,9 +1,10 @@
-package com;
+package com.Parser;
 
 import com.entity.Product;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.sql.Timestamp;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -17,7 +18,6 @@ public class Handler extends DefaultHandler {
     private String currentTagName;
     private String CUR_Price;
     private String CUR_Currency;
-    private String DocName;
     private String CertLink;
     private String CertDescription;
     private String external;
@@ -51,10 +51,6 @@ public class Handler extends DefaultHandler {
     private Boolean isAvailability = false;
 
 
-//    public HashMap<Integer, Root> getProducts(){
-//        return products;
-//    }
-
     public HashSet<Product> getProducts(){
         return products;
     }
@@ -77,10 +73,11 @@ public class Handler extends DefaultHandler {
             String qName,
             Attributes attributes) {
             currentTagName = qName;
-//        if(qName.equals("Product")) {
-//            root = new Root();
         if(qName.equals("Product")) {
             root = new Product();
+            Timestamp t = new Timestamp(System.currentTimeMillis());
+            String timestamp = String.valueOf(t);
+            root.setStartData(timestamp);
         }if(qName.equals("Param")){
             isParam = true;
         }if(qName.equals("Document")){
@@ -130,69 +127,101 @@ public class Handler extends DefaultHandler {
     public void characters(char ch[], int start, int length) {
         String value = new String(ch, start, length);
 
-        if(currentTagName == null){
+        if(currentTagName == null) {
             return;
-//        }else if(currentTagName.equals("ID")) {
-//            root.setID(new Integer(value));
-        }else if(currentTagName.equals("EAN")){
-            root.setEAN((value));
-        }else if(currentTagName.equals("PartNumber")){
-            root.setPartNumber((value));
-        }else if(currentTagName.equals("Name") && !isParam && !isDoc){
+        }
+        if(currentTagName.equals("ID")) {
+            root.setID(Long.parseLong(value));
+        }
+            switch (currentTagName){
+                case "EAN":
+                    root.setEAN((value));
+                    break;
+                case "PartNumber":
+                    root.setPartNumber((value));
+                    break;
+                case "Title":
+                    root.setTitle((value));
+                    break;
+                case "Language":
+                    root.setLanguage((value));
+                    break;
+                case "ITEMGROUP_ID":
+                    root.setITEMGROUP_ID((value));
+                    break;
+                case "Manufacturer":
+                    root.setManufacturer((value));
+                    break;
+                case "Supplier":
+                    root.setSupplier((value));
+                    break;
+                case "CountryOfOrigin":
+                    root.setCountryOfOrigin((value));
+                    break;
+                case "MeasureUnit":
+                    root.setMeasureUnit((value));
+                    break;
+                case "Price":
+                    CUR_Price = value;
+                    break;
+                case "Currency":
+                    CUR_Currency = value;
+                    root.setRecommendedPrice(CUR_Price, CUR_Currency);
+                    break;
+                case "Rate":
+                    VATRate = value;
+                    break;
+                case "Country":
+                    root.setVat(VATRate, value);
+                    break;
+                case "ShortDescription":
+                    if(isShortDescription){
+                        ShortDescription.add(value);
+                    }
+                    break;
+                case "LargeDescription":
+                    if(isLargeDescription) {
+                        LargeDescription.add(value);
+                    }
+                    break;
+                case "Video":
+                    root.setVideo(value);
+                    break;
+                case "Guarantee":
+                    root.setGuarantee(value);
+                    break;
+                case "GuaranteeType":
+                    root.setGuaranteeType(value);
+                    break;
+                case "IsNew":
+                    isNew = (value);
+                    break;
+                case "IsSale":
+                    isSale = (value);
+                    break;
+                case "IsOutlet":
+                    isOutlet = (value);
+                    root.setConditions(isNew, isSale, isOutlet);
+                    break;
+                case "Season":
+                    root.setSeason(value);
+                    break;
+
+            }
+         if(currentTagName.equals("Name") && !isParam && !isDoc){
             root.setName(value);
-        }else if(currentTagName.equals("Title")){
-            root.setTitle((value));
-        }else if(currentTagName.equals("Language")){
-            root.setLanguage((value));
-        }else if(currentTagName.equals("ITEMGROUP_ID")){
-            root.setITEMGROUP_ID((value));
-        }else if(currentTagName.equals("Manufacturer")){
-            root.setManufacturer((value));
-        }else if(currentTagName.equals("Supplier")){
-            root.setSupplier((value));
-        }else if(currentTagName.equals("CountryOfOrigin")){
-            root.setCountryOfOrigin((value));
-        }else if(currentTagName.equals("MeasureUnit")){
-            root.setMeasureUnit((value));
-        }else if(currentTagName.equals("Price")){
-               CUR_Price = value;
-        }else if(currentTagName.equals("Currency")){
-            CUR_Currency = value;
-//            if(CUR_Price != null && CUR_Currency != null) {
-            root.setRecommendedPrice(CUR_Price, CUR_Currency);
-//            }
-        }else if(currentTagName.equals("Rate")){
-            VATRate = value;
-        }else if(currentTagName.equals("Country")){
-            root.setVat(VATRate, value);
-        }else if(currentTagName.equals("ShortDescription")){
-            if(isShortDescription){
-                ShortDescription.add(value);
-            }
-        }else if(currentTagName.equals("LargeDescription")){
-            if(isLargeDescription) {
-                LargeDescription.add(value);
-            }
         }else if(currentTagName.equals("ImageLink")&& !isCertificate) {
             root.setImageLink(value);
-//        }else if(currentTagName.equals("AdditionalImageLink")){
-//            root.addAdditionImageLink(value);
         }else if(currentTagName.equals("Name") && !isParam && isDoc){
             DocumentName = value;
-//            root.setDocumentName(value);
         }else if(currentTagName.equals("Link")&& !isParam && isDoc){
             root.setDocument(DocumentName, value);
         }else if(currentTagName.equals("Link") && isCertificate){
             this.CertLink = value;
-           // System.out.println(isCertificate);
         }else if(currentTagName.equals("Description") && isCertificate){
             this.CertDescription = value;
-            //System.out.println(isCertificate);
         }else if(currentTagName.equals("ImageLink") && isCertificate){
-            //System.out.println(isCertificate);
             root.setCertificate(CertLink, CertDescription, value);
-        }else if(currentTagName.equals("Video")){
-            root.setVideo(value);
         }else if(currentTagName.equals("internal") && isAvailability){
             internal = (value);
         }else if(currentTagName.equals("external") && isAvailability){
@@ -200,19 +229,6 @@ public class Handler extends DefaultHandler {
         }else if(currentTagName.equals("manufacturer") && isAvailability){
             manufacturer = (value);
             root.setAvailability(internal, external, manufacturer);
-        }else if(currentTagName.equals("Guarantee")){
-            root.setGuarantee(value);
-        }else if(currentTagName.equals("GuaranteeType")){
-            root.setGuaranteeType(value);
-        }else if(currentTagName.equals("IsNew")){
-            isNew = (value);
-        }else if(currentTagName.equals("IsSale")){
-            isSale = (value);
-        }else if(currentTagName.equals("IsOutlet")){
-            isOutlet = (value);
-            root.setConditions(isNew, isSale, isOutlet);
-        }else if(currentTagName.equals("Season")){
-            root.setSeason(value);
         }else if(currentTagName.equals("Name") && isParam){
             nameParam = value;
         }else if(currentTagName.equals("Value")&& isParam){
@@ -221,11 +237,11 @@ public class Handler extends DefaultHandler {
             unitParam = value;
             root.setParam(nameParam, valueParam, unitParam);
 
-//        }else{
-//            if(!tagsXML.contains(currentTagName)){
-//                System.out.println(currentTagName + value);
-//                root.setUndefinedData(currentTagName, value);
-//            }
+        }else{
+            if(!tagsXML.contains(currentTagName)){
+                System.out.println(currentTagName + value);
+                root.setUndefinedData(currentTagName, value);
+            }
         }
     }
 

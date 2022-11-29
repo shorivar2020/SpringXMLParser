@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -19,4 +18,6 @@ public class AdditionImageLink {
     private Long ProductId;
     @Column(name = "link")
     public String link;
+    @Column(name = "start_data")
+    private String StartData;
 }

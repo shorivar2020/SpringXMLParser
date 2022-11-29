@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -21,5 +20,6 @@ public class Document {
     private String Name;
     @Column(name = "link")
     private String Link;
-
+    @Column(name = "start_data")
+    private String StartData;
 }

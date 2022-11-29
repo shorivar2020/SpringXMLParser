@@ -13,12 +13,12 @@ public class IniReader {
     String password;
     String urlDB;
 
-    public IniReader (String path) throws Exception{
+    public IniReader (org.slf4j.Logger log, String path) throws Exception{
         Wini ini = new Wini(new File(path));
         this.url = ini.get("website", "url", String.class);
         this.username = ini.get("database", "username", String.class);
         this.urlDB = ini.get("database", "urlDB", String.class);
         this.password = ini.get("database", "password", String.class);
-       // log.info("Data was received from Config file");
+        log.info("Data was received from Config file");
     }
 }

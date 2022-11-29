@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -12,7 +11,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "product")
 public class Product{
-
     @Id
     private Long ID;
     @Column(name = "ean")
@@ -35,9 +33,9 @@ public class Product{
     private String CountryOfOrigin;
     @Column(name = "measure_unit")
     private String MeasureUnit;
-//    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = RecommendedPrice.class)
-//    @JoinColumn(name = "id_recommended_price")
-//    private RecommendedPrice RecommendedPrice;
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = RecommendedPrice.class)
+    @JoinColumn(name = "recommended_price")
+    private RecommendedPrice RecommendedPrice;
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Vat.class)
     @JoinColumn(name = "vat")
     private Vat vat;
@@ -76,55 +74,78 @@ public class Product{
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Param.class)
     @JoinColumn(name = "id_param")
     private  Param param;
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = UndefinedData.class)
+    @JoinColumn(name = "id_undefined_data")
+    private UndefinedData undefinedData;
+
+    @Column(name = "start_data")
+    private String StartData;
+
+
 
     public void setParam(String name, String value, String unit){
         param = new Param();
-        param.setProductId(ID);
+        param.setProductId(this.ID);
         param.setName(name);
         param.setValue(value);
         param.setUnit(unit);
+        param.setStartData(this.StartData);
     }
     public void setVat(String rate, String country){
         vat = new Vat();
-        vat.setProductId(ID);
+        vat.setProductId(this.ID);
         vat.setCountry(country);
         vat.setRate(rate);
+        vat.setStartData(this.StartData);
     }
     public void setRecommendedPrice(String price, String currency){
-//        RecommendedPrice = new RecommendedPrice();
-//        RecommendedPrice.setProductId(ID);
-//        RecommendedPrice.setPrice(price);
-//        RecommendedPrice.setCurrency(currency);
+        RecommendedPrice = new RecommendedPrice();
+        RecommendedPrice.setProductId(this.ID);
+        RecommendedPrice.setPrice(price);
+        RecommendedPrice.setCurrency(currency);
+        RecommendedPrice.setStartData(this.StartData);
     }
     public void setDocument(String name, String link) {
         document = new Document();
-        document.setProductId(ID);
+        document.setProductId(this.ID);
         document.setName(name);
         document.setLink(link);
+        document.setStartData(this.StartData);
     }
     public void setConditions(String isNew, String isOutlet, String isSale){
         conditions = new Conditions();
-        conditions.setProductId(ID);
+        conditions.setProductId(this.ID);
         conditions.setIsNew(isNew);
         conditions.setIsOutlet(isOutlet);
         conditions.setIsSale(isSale);
+        conditions.setStartData(this.StartData);
     }
     public void setCertificate(String link, String description, String imageLink){
         certificate = new Certificate();;
-        certificate.setProductId(ID);
+        certificate.setProductId(this.ID);
         certificate.setLink(link);
         certificate.setDescriptions(description);
         certificate.setImageLink(imageLink);
+        certificate.setStartData(this.StartData);
     }
     public void setAvailability(String Manufacture, String External, String Internal){
         availability = new Availability();
-        availability.setProductId(ID);
+        availability.setProductId(this.ID);
         availability.setManufacturer(Manufacture);
         availability.setExternal(External);
         availability.setInternal(Internal);
+        availability.setStartData(this.StartData);
+    }
+
+    public void  setUndefinedData(String Tag, String Data){
+        undefinedData = new UndefinedData();
+        undefinedData.setProductId(this.ID);
+        undefinedData.setTag(Tag);
+        undefinedData.setData(Data);
+        undefinedData.setStartData(this.StartData);
     }
 //    public void addAdditionImageLink(String link){
-//        additionImageLink.setId(ID);
+//        additionImageLink.setId(this.ID);
 //        additionImageLink.setLink(link);
 //    }
 }

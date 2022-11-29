@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ProductService {
+public class ProductService implements com.service.Service {
 
     private final ProductRepository productRepository;
     private final ProductClient productClient;

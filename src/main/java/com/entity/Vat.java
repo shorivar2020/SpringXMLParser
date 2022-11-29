@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -21,5 +20,6 @@ public class Vat {
     public String Rate;
     @Column(name = "country")
     public String Country;
-
+    @Column(name = "start_data")
+    private String StartData;
 }

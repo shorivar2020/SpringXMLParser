@@ -9,19 +9,17 @@ import javax.persistence.*;
 @Setter
 @ToString(includeFieldNames=true)
 @Entity
-@Table(name = "conditions")
-public class Conditions{
+@Table(name = "undefined_data")
+public class UndefinedData {
     @Id
     @GeneratedValue
     private Long id;
     @Column(name = "product_id")
     private Long ProductId;
-    @Column(name = "is_new")
-    public String IsNew;
-    @Column(name = "is_sale")
-    public String IsSale;
-    @Column(name = "is_out_let")
-    public String IsOutlet;
+    @Column(name = "tag")
+    public String Tag;
+    @Column(name = "data")
+    public String Data;
     @Column(name = "start_data")
     private String StartData;
 }

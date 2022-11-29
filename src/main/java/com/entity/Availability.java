@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -11,6 +10,7 @@ import javax.persistence.*;
 @ToString(includeFieldNames=true)
 @Entity
 @Table(name = "availability")
+public
 class Availability {
     @Id
     @GeneratedValue
@@ -23,10 +23,6 @@ class Availability {
     public String external;
     @Column(name = "manufacturer")
     public String manufacturer;
-
-//    public Availability(Integer internal, Integer external, Integer manufacturer) {
-//        this.internal = internal;
-//        this.external = external;
-//        this.manufacturer = manufacturer;
-//    }
+    @Column(name = "start_data")
+    private String StartData;
 }

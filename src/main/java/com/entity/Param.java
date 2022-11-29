@@ -3,16 +3,14 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
-
 
 @ToString(includeFieldNames=true)
 @Entity
 @Table(name = "param")
 @Getter
 @Setter
-class Param{
+public class Param{
     @Id
     @GeneratedValue
     private Long id;
@@ -24,5 +22,6 @@ class Param{
     public String Value;
     @Column(name = "unit")
     public String Unit;
-
+    @Column(name = "start_data")
+    private String StartData;
 }

@@ -4,11 +4,10 @@ import com.entity.Product;
 import com.entity.ProductsDTO;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-
 import java.util.List;
 
 @Component
-public class ProductClient {
+public class ProductClient implements Client{
 
     public static final String URL = "information.xml";
 

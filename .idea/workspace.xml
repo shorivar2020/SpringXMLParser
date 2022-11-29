@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4a4d38d-d9ca-4bf6-9f16-e046cf1538b9" name="Changes" comment="" />
+    <list default="true" id="e4a4d38d-d9ca-4bf6-9f16-e046cf1538b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ParsingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/UndefinedData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notUseOldClass/Action1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DatabaseInsertData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notUseOldClass/DatabaseInsertData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Parser/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/IniReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/IniReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Root.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notUseOldClass/Root.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringParserXmlApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/ProductClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ProductParsingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ProductParsingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/AdditionImageLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/AdditionImageLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Availability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Availability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Certificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Certificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Conditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Param.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Param.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/RecommendedPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/RecommendedPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Vat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Vat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ProductService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +48,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -46,20 +85,28 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\com" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\resources" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\notUseOldClass" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\com" />
+      <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -72,8 +119,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="SpringParserXmlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="XMLparser-master" />
       <extension name="coverage">
         <pattern>
@@ -81,16 +128,49 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.SpringParserXmlApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Main" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DockerFile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="DockerFile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="com: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/java/com/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="com/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="src/main/java/com/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.DockerFile" />
+      <item itemvalue="Docker.com: Compose Deployment" />
+      <item itemvalue="Docker.com/Dockerfile" />
+      <item itemvalue="Spring Boot.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringParserXmlApplication" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Docker.com: Compose Deployment" />
+        <item itemvalue="Docker.com/Dockerfile" />
+        <item itemvalue="Docker.DockerFile" />
       </list>
     </recent_temporary>
   </component>
@@ -105,11 +185,37 @@
       <workItem from="1669053284487" duration="9411000" />
       <workItem from="1669160066296" duration="359000" />
       <workItem from="1669160542098" duration="10688000" />
-      <workItem from="1669388773846" duration="15756000" />
+      <workItem from="1669388773846" duration="16525000" />
+      <workItem from="1669657381172" duration="15866000" />
+      <workItem from="1669675639334" duration="833000" />
+      <workItem from="1669676775184" duration="10054000" />
+      <workItem from="1669758280071" duration="6546000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.dao.DataIntegrityViolationException" package="org.springframework.dao" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

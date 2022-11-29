@@ -13,7 +13,7 @@
 //        String timestamp = String.valueOf(t);
 //        products.forEach((k, r) -> {
 //            try {
-//                log.info("Main - Products");
+//                log.info("com.Main - Products");
 //                action.CheckExist(statement, "products", r.getID(), timestamp);
 //                action.NewRowProducts(statement, timestamp, r.getID(), r.getEAN(), r.getPartNumber(),
 //                        r.getName(), r.getTitle(), r.getLanguage(),

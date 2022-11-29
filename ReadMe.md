@@ -10,7 +10,7 @@ response with <b>DownloadFileFromUrl</b></p>
 Application takes this received XML data, 
 parses through the data (Using method com.SAX) and saves the data
 to a DB table with <b>com.SAX</b></p>
-<p><b>com.Handler</b> do reaction from com.SAX parser on XML tags</p>
+<p><b>com.Parser.Handler</b> do reaction from com.SAX parser on XML tags</p>
 <p>All work with SQL in <b>Action</b></p>
 <p>My DS is MYSQL local hostname and port 3306</p>
 <p>For control version of DATA use <b>SCD2</b>

@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -23,9 +22,6 @@ public class Certificate{
     public String Descriptions;
     @Column(name = "image_link")
     public String ImageLink;
-//    public Certificate(String link, String descriptions, String imageLink) {
-//        this.Link = link;
-//        this.Descriptions = descriptions;
-//        this.ImageLink = imageLink;
-//    }
+    @Column(name = "start_data")
+    private String StartData;
 }

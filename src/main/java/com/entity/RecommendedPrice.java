@@ -3,7 +3,6 @@ package com.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Getter
@@ -21,4 +20,6 @@ public class RecommendedPrice {
     public String Price;
     @Column(name = "currency")
     public String Currency;
+    @Column(name = "start_data")
+    private String StartData;
 }

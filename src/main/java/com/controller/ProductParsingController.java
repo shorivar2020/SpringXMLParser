@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class ProductParsingController {
+public class ProductParsingController implements ParsingController{
     private final ProductService productService;
 
     @GetMapping(value = "/getProduct")
