@@ -37,6 +37,7 @@ public class SAX{
                 Service.createProduct(p);
                 it.remove();
             }
+
             log.info("All products was succesfully save in DB");
            // action.destroyConnection(connection); //Close DB
         } catch (SAXException e){

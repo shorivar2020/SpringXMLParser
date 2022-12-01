@@ -35,6 +35,7 @@ public class Main {
         SAX sax = new SAX();
         //sax.SAX(log, dffu.getFileName(), urlDB, username, password);
         sax.SAX(log, dffu, urlDB, username, password, Service);
+
         System.out.println("ALL GOOD");
     }
 }

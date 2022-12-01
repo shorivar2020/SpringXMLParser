@@ -2,7 +2,7 @@
 //
 //import com.client.ProductClient;
 //import com.entity.*;
-//import com.repository.ProductRepository;
+//import com.service.ProductRepository;
 //import com.service.ProductService;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Condition;
