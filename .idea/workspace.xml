@@ -9,23 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4a4d38d-d9ca-4bf6-9f16-e046cf1538b9" name="Changes" comment="Clear code">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/XMLparser_master_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POSTGRES.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/ServiceProduct.java" afterDir="false" />
+    <list default="true" id="e4a4d38d-d9ca-4bf6-9f16-e046cf1538b9" name="Changes" comment="Docker implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Parser/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Parser/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SAX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ProductParsingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ProductParsingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/config/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/UndefinedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/UndefinedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notUseOldClass/Action1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notUseOldClass/DatabaseInsertData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notUseOldClass/Root.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -179,6 +178,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Main" />
+      <option name="PROGRAM_PARAMETERS" value="config.ini" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
@@ -221,9 +221,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="Maven.XMLparser-master [spring-boot:build-image]" />
-        <item itemvalue="Docker.DockerFile" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.DockerFile" />
+        <item itemvalue="Maven.XMLparser-master [spring-boot:build-image]" />
         <item itemvalue="Docker.com: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -249,7 +249,11 @@
       <workItem from="1669782221658" duration="4095000" />
       <workItem from="1669847158324" duration="13056000" />
       <workItem from="1669866212639" duration="2000" />
-      <workItem from="1669874416632" duration="3868000" />
+      <workItem from="1669874416632" duration="4720000" />
+      <workItem from="1670178500857" duration="1339000" />
+      <workItem from="1670320562347" duration="1803000" />
+      <workItem from="1670554217039" duration="8961000" />
+      <workItem from="1670577368184" duration="6839000" />
     </task>
     <task id="LOCAL-00001" summary="Clear code">
       <created>1669765889170</created>
@@ -258,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669765889170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Docker implementation">
+      <created>1669878551863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669878551863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +289,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clear code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clear code" />
+    <MESSAGE value="Docker implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

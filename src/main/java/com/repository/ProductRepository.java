@@ -1,4 +1,4 @@
-package com.service;
+package com.repository;
 
 import com.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -20,3 +20,12 @@ spring:
         proc:
           param_null_passing: true
         dialect: org.hibernate.dialect.PostgreSQL94Dialect
+logging:
+  file.name: app.log
+  pattern:
+    console: "%d [%t] %-5level %logger{36} - %msg%n"
+    file: "%d [%t] %-5level %logger{36} - %msg%n"
+  level:
+    com.m2evorah: INFO
+    org.springframework: INFO
+    org.hibernate: INFO

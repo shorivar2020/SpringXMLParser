@@ -2,6 +2,7 @@ package com.service;
 
 import com.client.ProductClient;
 import com.entity.Product;
+import com.repository.ProductRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

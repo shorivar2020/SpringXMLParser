@@ -18,8 +18,6 @@ public class UndefinedData {
     private Long ProductId;
     @Column(name = "tag")
     public String Tag;
-    @Column(name = "data")
-    public String Data;
     @Column(name = "start_data")
     private String StartData;
 }

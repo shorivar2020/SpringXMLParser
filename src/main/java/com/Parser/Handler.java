@@ -33,6 +33,7 @@ public class Handler extends DefaultHandler {
     private String DocumentName;
     private ArrayList<String> ShortDescription;
     private ArrayList<String> LargeDescription;
+    private ArrayList<String> AdditionalImageLink;
 
     public final List<String> tagsXML = Arrays.asList("B2B", "Product", "ID", "EAN", "PartNumber",
             "Name", "Name2", "Title", "Language", "ITEMGROUP_ID", "Manufacturer", "Supplier",
@@ -206,7 +207,9 @@ public class Handler extends DefaultHandler {
                 case "Season":
                     root.setSeason(value);
                     break;
-
+                case "AdditionalImageLink":
+                    root.setAdditionImageLink(value);
+                    break;
             }
          if(currentTagName.equals("Name") && !isParam && !isDoc){
             root.setName(value);

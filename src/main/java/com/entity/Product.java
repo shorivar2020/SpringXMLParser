@@ -141,11 +141,13 @@ public class Product{
         undefinedData = new UndefinedData();
         undefinedData.setProductId(this.ID);
         undefinedData.setTag(Tag);
-        undefinedData.setData(Data);
         undefinedData.setStartData(this.StartData);
     }
-//    public void addAdditionImageLink(String link){
-//        additionImageLink.setId(this.ID);
-//        additionImageLink.setLink(link);
-//    }
+    public void setAdditionImageLink(String link){
+        additionImageLink = new AdditionImageLink();
+        additionImageLink.setId(this.ID);
+        additionImageLink.setProductId(this.ID);
+        additionImageLink.setLink(link);
+        additionImageLink.setStartData(this.StartData);
+    }
 }
