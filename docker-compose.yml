@@ -10,8 +10,6 @@ services:
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     depends_on:
       - postgresql
-    ports:
-      - 8080:8080
 
   postgresql:
     container_name: postgresql
@@ -19,6 +17,4 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 3400
-    ports:
-      - 5432:5432
 
