@@ -25,14 +25,16 @@ public class Main {
 
     @EventListener(ApplicationReadyEvent.class)
     private void testJpaMethods() throws Exception {
-        log.info("Read ini file");
-        IniReader ini = new IniReader(log, path);
-        String url = ini.getUrl();
-        log.info("Download xml file");
-        DownloadFileFromUrl dffu = new DownloadFileFromUrl(log, url);
+//        log.info("Read ini file");
+//        IniReader ini = new IniReader(log, path);
+//        String url = ini.getUrl();
+//        log.info("Download xml file");
+//        DownloadFileFromUrl dffu = new DownloadFileFromUrl(log, url);
         log.info("Parser xml file");
         SAX sax = new SAX();
-        sax.SAX(log, dffu.getFileName(), Service);
+//        sax.SAX(log, dffu.getFileName(), Service);
+        sax.SAX(log, "information.xml", Service);
+
         log.info("Work was finished");
     }
 }

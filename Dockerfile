@@ -5,4 +5,5 @@
 
 FROM openjdk:17
 COPY target/testTask-1.0-SNAPSHOT.jar xml-parser.jar
-ENTRYPOINT ["java", "-jar", "/xml-parser.jar"]
+COPY information.xml .
+ENTRYPOINT ["java", "-jar", "/xml-parser.jar", "config.ini"]

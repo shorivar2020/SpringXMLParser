@@ -10,8 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a4d38d-d9ca-4bf6-9f16-e046cf1538b9" name="Changes" comment="Docker implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/XMLparser_master_jar2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/information.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SAX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +68,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -69,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/testTask-1.0-SNAPSHOT.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -86,8 +95,9 @@
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\notUseOldClass" />
+      <recent name="C:\Users\User\Desktop\XMLparser-master" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\com" />
+      <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\notUseOldClass" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -101,9 +111,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.DockerFile">
+  <component name="RunManager" selected="Spring Boot.Main">
     <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/testTask-1.0-SNAPSHOT.jar" />
+      <option name="PROGRAM_PARAMETERS" value="config.ini" />
       <option name="WORKING_DIRECTORY" value="C:\Users\User\Desktop\XMLparser-master" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
@@ -207,9 +218,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Docker.DockerFile" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Maven.XMLparser-master [spring-boot:build-image]" />
         <item itemvalue="Docker.com: Compose Deployment" />
       </list>
@@ -240,7 +251,11 @@
       <workItem from="1670178500857" duration="1339000" />
       <workItem from="1670320562347" duration="1803000" />
       <workItem from="1670554217039" duration="8961000" />
-      <workItem from="1670577368184" duration="8234000" />
+      <workItem from="1670577368184" duration="25672000" />
+      <workItem from="1670726444109" duration="342000" />
+      <workItem from="1670727280322" duration="2122000" />
+      <workItem from="1670729433493" duration="425000" />
+      <workItem from="1670729870966" duration="3615000" />
     </task>
     <task id="LOCAL-00001" summary="Clear code">
       <created>1669765889170</created>
@@ -263,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670588316503</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Docker implementation">
+      <created>1670590002024</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670590002024</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

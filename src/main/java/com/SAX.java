@@ -20,7 +20,8 @@ public class SAX{
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         Handler handler = new Handler();
-        File file = new File(fileName);
+        File file = new File("information.xml");
+        log.info(fileName);
         try{
             parser.parse(file, handler); //Parsing file
             HashSet<Product> products = handler.getProducts(); //Take results of parsing

@@ -3,18 +3,17 @@ services:
     container_name: xml-parser
     build:
       context: .
+    depends_on:
+      - postgresql
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/ParserXML
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://host.docker.internal:5432/postgres
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=3400
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-    depends_on:
-      - postgresql
 
   postgresql:
     container_name: postgresql
     image: postgres:12.2-alpine
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 3400
-
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=3400
