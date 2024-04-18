@@ -10,16 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a4d38d-d9ca-4bf6-9f16-e046cf1538b9" name="Changes" comment="Docker implementation">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/XMLparser_master_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/information.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fa967e7b4c78b61b61a87a344d3a06eeaa41e1e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c8ee3c9ddbf20ee48c5ee8c14ca7effed7040cb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72f6368eb508d1f5066f8a8c6258cf8f3189fbc5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f305588fabb2ff0b1646d58b744321bf469ecc23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/f/0fa967e7b4c78b61b61a87a344d3a06eeaa41e1e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/c/2c8ee3c9ddbf20ee48c5ee8c14ca7effed7040cb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/2/72f6368eb508d1f5066f8a8c6258cf8f3189fbc5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f305588fabb2ff0b1646d58b744321bf469ecc23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xml_parser/client/ProductClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xml_parser/handler/XMLHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DownloadFileFromUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/DownloadFileFromUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/IniReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/IniReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Parser/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/handler/FileParserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/client/ProductClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ParsingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/controller/ParsingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ProductParsingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/controller/ProductParsingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/AdditionImageLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/AdditionImageLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Availability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Availability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Certificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Certificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Conditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Param.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Param.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/ProductsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/ProductsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/RecommendedPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/RecommendedPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/UndefinedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/UndefinedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Vat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/entity/Vat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/information.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ServiceProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xml_parser/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +92,27 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2HrpuiUBqyxbssa78qBH8OrQShr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "c0a761b87e9c2f6802f23a13717c545b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.entity" />
@@ -95,10 +123,14 @@
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\SpringXMLParser\src\main\resources" />
       <recent name="C:\Users\User\Desktop\XMLparser-master" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\com" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java\notUseOldClass" />
       <recent name="C:\Users\User\Desktop\XMLparser-master\src\main\java" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="xml_parser" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -169,16 +201,15 @@
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="XMLparser-master" />
+      <option name="PROGRAM_PARAMETERS" value="config.ini" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Main" />
-      <option name="PROGRAM_PARAMETERS" value="config.ini" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,6 +287,7 @@
       <workItem from="1670727280322" duration="2122000" />
       <workItem from="1670729433493" duration="425000" />
       <workItem from="1670729870966" duration="3615000" />
+      <workItem from="1713442900957" duration="11412000" />
     </task>
     <task id="LOCAL-00001" summary="Clear code">
       <created>1669765889170</created>
@@ -301,7 +333,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clear code" />
@@ -315,11 +346,6 @@
           <properties class="org.springframework.dao.DataIntegrityViolationException" package="org.springframework.dao" />
           <option name="timeStamp" value="4" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/controller/ParsingController.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -1,0 +1,10 @@
+
+
+java:S1223."LRename this method to prevent any misunderstanding or make it a constructor.(¦ŒÊ¥8ÍÜÑ‰ï1J$8ca9d125-4202-44e2-a16e-bd738484a7a1
+›
+java:S1450"SRemove the "path" field and declare it as a local variable in the relevant methods.(ÕÊÊéýÿÿÿÿ8ÐÜÑ‰ï1J$5fe979f5-8d07-4820-bf8a-f1ad90e834d0
+~
+java:S2696$"6Make the enclosing method "static" or remove this set.(øÿ”ˆúÿÿÿÿ8ÚÜÑ‰ï1J$974f1616-c73a-4e61-82c1-6a3db3f47770
+	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ŒÊ¥8ÝÜÑ‰ï1J$389a04d1-f57f-471c-b73f-d04b4e4e1ef4
+k	java:S106="+Replace this use of System.out by a logger.(Îáÿ“ûÿÿÿÿJ$9d0484ca-d64c-4f4e-a2ce-a1ce8876822d
+r	java:S106>"+Replace this use of System.out by a logger.(ð“Þóúÿÿÿÿ8æÜÑ‰ï1J$f65fc455-d736-471f-b33b-fcf0514e0905

@@ -1,0 +1,21 @@
+
+
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ø½±ÇûÿÿÿÿJ$ee63bc7e-c115-45d2-a5d5-14f3532a7049
+”	java:S116"RRename this field "Service" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æı8”ê³‰ï1J$778dafd9-5b43-4ce0-8d1e-8a4ac9dc8bb1
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•ê³‰ï1J$6f7ed492-da44-44e5-8977-9ba9d6dba5bf
+u
+java:S1450"SRemove the "path" field and declare it as a local variable in the relevant methods.(ÕÊÊéıÿÿÿÿ8–Ğµ‰ï1
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø½±ÇûÿÿÿÿJ$7c0edcb9-3813-4524-99e8-0c1698c48675
+z
+java:S1854"7Remove this useless assignment to local variable "sax".(†‰üê8¦Ü®‰ï1J$cda63f43-07ca-4e8c-9357-863872468631
+{
+java:S1854"8Remove this useless assignment to local variable "dffu".(¶òğ×8¨Ü®‰ï1J$fcbb4225-7349-498e-9305-e19a25c23fd3
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(øÿ”ˆúÿÿÿÿ8 Ğµ‰ï1
+l
+java:S1481")Remove this unused "dffu" local variable.(¶òğ×8«Ü®‰ï1J$e918f29d-b8a1-45c8-ab4f-f8af079a9efd
+k
+java:S1481"(Remove this unused "sax" local variable.(†‰üê8­Ü®‰ï1J$7281938b-71f0-49f5-8622-cd1e5b7de80e
+k	java:S106-"+Replace this use of System.out by a logger.(Îáÿ“ûÿÿÿÿJ$bdd75b61-3403-4cf7-bab9-1902e5f9af47
+k	java:S106."+Replace this use of System.out by a logger.(ğ“ŞóúÿÿÿÿJ$d3ebc10e-1b08-43b8-a3af-70a29a983451
